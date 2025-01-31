@@ -63,10 +63,13 @@ body {
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+
   body {
-    @apply bg-background text-foreground;
+    @layer utilities {
+      .bg-background {
+        background-color: #000000; /* Replace with your desired background color */
+      }
+    }
   }
 }
+
